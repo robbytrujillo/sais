@@ -115,18 +115,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- /.container-fluid -->
     </div>
     <!-- /.content -->
+     <br><br><br>
   </div>
   <!-- /.content-wrapper -->
-   <br><br><br>
+   
 
   <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
+ 
   <!-- /.control-sidebar -->
 
   <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
+<footer class="text-center text-lg-start bg-white text-muted">
+<!-- <footer class="text-center text-white main-footer"> -->
   <!-- Section: Social media -->
   
   <!-- Section: Social media -->
@@ -276,7 +276,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </div>
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  <!-- <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);"> -->
+  <div class="text-center p-4 bg-light">
     © 2021 Copyright:
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
