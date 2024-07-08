@@ -23,11 +23,12 @@
       <a href="<?= base_url('AdminLTE') ?>/index2.html" class="h1"><b>Admin</b>LTE</a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Silahkan Login</p>
 
-      <form action="<?= base_url('AdminLTE') ?>/index3.html" method="post">
+      <!-- <form action="<?= base_url('AdminLTE') ?>/index3.html" method="post"> -->
+      <?php echo form_open() ?>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input name="username" class="form-control" placeholder="Username/NISN/NIP">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -35,7 +36,16 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <select name="level" class="form-control">
+            <option value="">--Level--</option>
+            <option value="1">Admin</option>
+            <option value="2">Guru</option>
+            <option value="3">Wali Kelas</option>
+            <option value="4">Siswa</option>
+          </select> 
+        </div>
+        <div class="input-group mb-3">
+          <input name="password" type="password" class="form-control" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -57,7 +67,8 @@
           </div>
           <!-- /.col -->
         </div>
-      </form>
+      <?php echo form_close() ?>  
+
 
       <div class="social-auth-links text-center mt-2 mb-3">
         <a href="#" class="btn btn-block btn-primary">
